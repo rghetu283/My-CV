@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radu Alexandru Ghetu - CV</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: white;
+        }
+        
+        .container {
+            max-width: 210mm;
+            margin: 0 auto;
+            background: white;
+            padding: 15mm;
+        }
+        
+        .header {
+            border-bottom: 3px solid #2c3e50;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .header h1 {
+            color: #2c3e50;
+            font-size: 32px;
+            margin-bottom: 5px;
+        }
+        
+        .header .title {
+            color: #7f8c8d;
+            font-size: 18px;
+            font-weight: 500;
+        }
+        
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin-top: 15px;
+            font-size: 14px;
+        }
+        
+        .contact-info div {
+            display: flex;
+            align-items: center;
+        }
+        
+        .contact-info strong {
+            min-width: 80px;
+            color: #2c3e50;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        .section-title {
+            color: #2c3e50;
+            font-size: 20px;
+            font-weight: 600;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 8px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .job {
+            margin-bottom: 25px;
+        }
+        
+        .job-header {
+            margin-bottom: 10px;
+        }
+        
+        .job-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        
+        .company {
+            font-size: 15px;
+            color: #3498db;
+            font-weight: 500;
+        }
+        
+        .date {
+            color: #7f8c8d;
+            font-size: 14px;
+            font-style: italic;
+        }
+        
+        .job-description {
+            margin-top: 8px;
+            font-size: 14px;
+            line-height: 1.6;
+            text-align: justify;
+        }
+        
+        .education-item {
+            margin-bottom: 20px;
+        }
+        
+        .education-item h3 {
+            font-size: 16px;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        
+        .education-details {
+            font-size: 14px;
+            color: #555;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        
+        .skill-category h3 {
+            font-size: 15px;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        
+        .skill-category ul {
+            list-style: none;
+            font-size: 14px;
+        }
+        
+        .skill-category ul li {
+            padding: 4px 0;
+            padding-left: 15px;
+            position: relative;
+        }
+        
+        .skill-category ul li:before {
+            content: "▪";
+            position: absolute;
+            left: 0;
+            color: #3498db;
+        }
+        
+        .languages {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .language-item {
+            text-align: center;
+            padding: 15px;
+            background: #ecf0f1;
+            border-radius: 5px;
+        }
+        
+        .language-item h4 {
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        
+        .language-item p {
+            font-size: 13px;
+            color: #555;
+        }
+        
+        @media print {
+            body {
+                background: white;
+            }
+            .container {
+                padding: 0;
+                max-width: 100%;
+            }
+        }
+        
+        .print-button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 12px 24px;
+            background: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            z-index: 1000;
+        }
+        
+        .print-button:hover {
+            background: #2980b9;
+        }
+        
+        @media print {
+            .print-button {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <button class="print-button" onclick="window.print()">Download as PDF</button>
+    
+    <div class="container">
+        <div class="header">
+            <h1>Radu Alexandru Ghetu</h1>
+            <div class="title">Senior QA Specialist & Test Automation Lead</div>
+            <div class="contact-info">
+                <div><strong>Location:</strong> Timișoara, Romania</div>
+                <div><strong>Phone:</strong> +40 721 039 094</div>
+                <div><strong>Email:</strong> rghetu283@gmail.com</div>
+                <div><strong>Born:</strong> August 2, 1983</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Professional Summary</h2>
+            <p style="text-align: justify; font-size: 14px;">
+                Experienced QA professional with 15+ years in software quality assurance, test automation, and team leadership. 
+                Proven expertise in designing and implementing comprehensive test automation frameworks using multiple technologies 
+                including Selenium, Java, JavaScript, and C#. Strong background in both manual and automated testing methodologies, 
+                performance testing, and quality assurance best practices across diverse industries.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Professional Experience</h2>
+            
+            <div class="job">
+                <div class="job-header">
+                    <div class="job-title">QA Specialist</div>
+                    <div class="company">RECOM GMBH</div>
+                    <div class="date">2021 - Present</div>
+                </div>
+                <div class="job-description">
+                    Conducting comprehensive quality assurance for C# desktop applications, API services, and databases. 
+                    Developing and maintaining automated test suites using Ranorex Studio for UI automation and Postman for API testing. 
+                    Managing test cases and execution through TestRail while tracking defects in Redmine. Responsible for testing both 
+                    iOS and Android mobile applications, ensuring cross-platform functionality and quality standards.
+                </div>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <div class="job-title">QA Team Lead</div>
+                    <div class="company">Victory Square Partners (VSP)</div>
+                    <div class="date">February 2019 - 2025</div>
+                </div>
+                <div class="job-description">
+                    Led the development and implementation of enterprise-level test automation frameworks utilizing Selenium and Java. 
+                    Designed and executed comprehensive performance testing strategies using JMeter and sitespeed.io, building the 
+                    performance testing infrastructure from the ground up. Established quality assurance processes and standards across 
+                    multiple testing platforms including Mabl, TestCafe, Cypress, and Playwright. Authored and maintained the company's 
+                    Test Strategy and Test Plans, implementing BDD practices with Cucumber Studio and Xray for improved test management 
+                    and traceability.
+                </div>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <div class="job-title">QA Consultant & Team Lead</div>
+                    <div class="company">NTT DATA</div>
+                    <div class="date">September 2017 - February 2019</div>
+                </div>
+                <div class="job-description">
+                    Architected and implemented test automation frameworks using Protractor for Angular-based web applications, 
+                    specifically for the BMW My Workspace project. Conducted extensive performance and load testing utilizing JMeter 
+                    to ensure system reliability under various conditions. Established and enforced QA best practices across projects, 
+                    leading the QA team in Timișoara. Developed automated test suites for Mercedes Benz WLTP compliance testing, 
+                    ensuring regulatory adherence and quality standards.
+                </div>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <div class="job-title">Senior QA Test Automation Engineer</div>
+                    <div class="company">3Pillar Global</div>
+                    <div class="date">October 2016 - September 2017</div>
+                </div>
+                <div class="job-description">
+                    Developed comprehensive automated testing solutions using Selenium with Java for web applications. Designed and 
+                    executed performance and load testing strategies using JMeter. Configured and maintained Selenium Grid for parallel 
+                    test execution. Created and maintained Ruby integration tests and established AWS infrastructure for testing 
+                    environments. Implemented CI/CD pipelines using Jenkins for automated test execution and reporting.
+                </div>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <div class="job-title">Software Engineer in Test</div>
+                    <div class="company">Digital Education, Timișoara</div>
+                    <div class="date">October 2014 - October 2016</div>
+                </div>
+                <div class="job-description">
+                    Executed comprehensive quality assurance processes including automated and manual testing for web applications. 
+                    Developed test automation frameworks using Selenium with Java and conducted load testing with JMeter. Performed 
+                    security testing and established monitoring solutions using NewRelic and Zabbix. Configured Heroku deployment 
+                    environments and maintained AWS infrastructure. Created and reviewed Ruby unit and integration tests while ensuring 
+                    UX quality standards across applications.
+                </div>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <div class="job-title">QA Specialist & Scrum Master</div>
+                    <div class="company">Waterford Research SRL, Timișoara</div>
+                    <div class="date">October 2012 - October 2014</div>
+                </div>
+                <div class="job-description">
+                    Served as Scrum Master while leading quality assurance initiatives in an Agile environment. Developed automated 
+                    testing solutions using Selenium with Java for functionality testing and JMeter for load testing. Specialized in 
+                    GWT component testing, ensuring quality at the component level. Designed test scenarios and established testing 
+                    environments for comprehensive quality coverage of web applications.
+                </div>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <div class="job-title">Technician</div>
+                    <div class="company">ACP Computers, Vienna</div>
+                    <div class="date">August 2009 - December 2010</div>
+                </div>
+                <div class="job-description">
+                    Developed custom Microsoft Word templates for law firms using proprietary API. Managed databases and maintained 
+                    web content through CMS. Created automated document generation solutions with customizable fields, formatting, 
+                    and styling options.
+                </div>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <div class="job-title">Software Developer</div>
+                    <div class="company">BOC Business Objectives Consulting, Vienna</div>
+                    <div class="date">September 2008 - February 2009</div>
+                </div>
+                <div class="job-description">
+                    Implemented test automation framework based on TestNG. Executed automated tests and generated comprehensive test 
+                    reports by parsing XML outputs. Created data generation solutions for various testing scenarios, from small-scale 
+                    to large-scale data requirements.
+                </div>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <div class="job-title">Software Developer</div>
+                    <div class="company">ASoft, Timișoara</div>
+                    <div class="date">2007 - 2008</div>
+                </div>
+                <div class="job-description">
+                    Developed software solutions in C# for diverse applications including timekeeping systems and betting game platforms. 
+                    Contributed to full software development lifecycle from requirements analysis to deployment.
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Education</h2>
+            
+            <div class="education-item">
+                <h3>Master's Degree in Automated Systems</h3>
+                <div class="education-details">
+                    Polytechnic University of Timișoara | 2008 - 2010
+                </div>
+            </div>
+            
+            <div class="education-item">
+                <h3>Bachelor's Degree in Engineering</h3>
+                <div class="education-details">
+                    Polytechnic University of Timișoara | 2002 - 2007<br>
+                    Specialization: Automation, Applied Informatics, Computer Networks, Industrial Informatics, Programming
+                </div>
+            </div>
+            
+            <div class="education-item">
+                <h3>Baccalaureate - Mathematics & Informatics</h3>
+                <div class="education-details">
+                    Nikolaus Lenau High School, Timișoara (German Language) | 1998 - 2002
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Test Automation & Tools</h3>
+                    <ul>
+                        <li>Selenium WebDriver (Java)</li>
+                        <li>Ranorex Studio</li>
+                        <li>TestCafe, Cypress, Playwright</li>
+                        <li>Protractor (Angular)</li>
+                        <li>Mabl Test Automation</li>
+                        <li>JMeter (Load & Performance)</li>
+                        <li>Sitespeed.io</li>
+                        <li>Postman (API Testing)</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Programming & Frameworks</h3>
+                    <ul>
+                        <li>Java, C#, JavaScript</li>
+                        <li>Ruby, Ruby on Rails</li>
+                        <li>TestNG, JUnit</li>
+                        <li>GWT Testing</li>
+                        <li>API Development & Testing</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>CI/CD & DevOps</h3>
+                    <ul>
+                        <li>Jenkins, Bamboo</li>
+                        <li>Azure DevOps</li>
+                        <li>AWS (S3, DynamoDB, AppSync, CloudWatch)</li>
+                        <li>Selenium Grid</li>
+                        <li>Heroku</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Test Management & Tools</h3>
+                    <ul>
+                        <li>TestRail, Xray</li>
+                        <li>Cucumber Studio (BDD)</li>
+                        <li>Jira, Redmine</li>
+                        <li>IntelliJ IDEA, Visual Studio</li>
+                        <li>Oracle DB, SQL</li>
+                        <li>NewRelic, Zabbix</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Languages</h2>
+            <div class="languages">
+                <div class="language-item">
+                    <h4>Romanian</h4>
+                    <p>Native</p>
+                </div>
+                <div class="language-item">
+                    <h4>English</h4>
+                    <p>Fluent (Professional)</p>
+                </div>
+                <div class="language-item">
+                    <h4>German</h4>
+                    <p>Fluent (Professional)</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Core Competencies</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Leadership & Management</h3>
+                    <ul>
+                        <li>Team Leadership & Mentoring</li>
+                        <li>QA Strategy Development</li>
+                        <li>Training & Presentations</li>
+                        <li>Agile/Scrum Master Experience</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Professional Skills</h3>
+                    <ul>
+                        <li>Strategic Problem Solving</li>
+                        <li>Deadline Management</li>
+                        <li>Cross-functional Communication</li>
+                        <li>Continuous Learning Mindset</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Additional Information</h2>
+            <p style="font-size: 14px;"><strong>Driver's License:</strong> Categories A, B</p>
+        </div>
+    </div>
+</body>
+</html>
